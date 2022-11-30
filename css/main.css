@@ -1,0 +1,487 @@
+/* Reseteamos los margin y paddings de todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitamos problemas con las imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* opcional */
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* opcional */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Reseteamos las tablas */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  color: black;
+  /* opcional */
+  line-height: 1.4em;
+  /* opcional */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  /* opcional */
+  font-smooth: always;
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/***************************************************HEADER*******************************************/
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+.site-logo {
+  width: 3rem;
+  height: 3rem;
+  background: no-repeat url(./../images/logo.svg.svg);
+  fill: black;
+}
+
+header {
+  --text: black;
+  --background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: background 250ms ease-in;
+  background: var(--background);
+  color: var(--text);
+}
+
+.header__wraper {
+  padding: 2rem 1rem 2rem 5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.sticky {
+  background: white;
+  opacity: 1;
+  box-shadow: 0 0.1875rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+.header__btn-menu {
+  filter: brightness(0);
+  display: none;
+}
+
+.main-nav-close {
+  display: none;
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-weight: 600;
+}
+
+.nav__link {
+  --spacing: 1em;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: calc(var(--spacing) / 2) var(--spacing);
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  font-size: 0.9rem;
+}
+
+.nav__link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: var(--spacing);
+  right: var(--spacing);
+  height: 0.125rem;
+  background: currentColor;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  transition: -webkit-transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+}
+
+.nav__link:hover::after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.nav__link--btn:hover {
+  background: var(--text);
+  color: var(--text-inverse);
+  border-color: var(--text);
+}
+
+.nav__link--btn::after {
+  display: none;
+}
+
+.nav__link--btn--highlight:hover {
+  background: var(--text);
+  border-color: var(--text);
+}
+
+.nav-scrolled {
+  --text: #333;
+  --text-inverse: #f4f4f4;
+  --background: #f4f4f4;
+  box-shadow: 0 0.1875rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+/***************************************************MAIN*******************************************/
+
+.home-intro {
+  padding: 50vh 0;
+  background: url(./../images/portada_flip.webp);
+  opacity: 0.7;
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: black;
+  text-align: center;
+}
+
+.home-intro-h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  color: #333;
+}
+
+.home-intro-h2 {
+  margin-top: 2rem;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  color: rgb(51, 51, 51);
+}
+
+.home-about {
+  padding: 4em 0;
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+
+.home-about-h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #c71585;
+}
+
+.columns {
+  display: flex;
+}
+
+.col + .col {
+  margin-left: 1.5em;
+}
+
+/************************************************** TYPES ******************************************************/
+
+.home-about-container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.home-about-images-wrapper {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.home-about-image-title {
+  position: absolute;
+  bottom: 1rem;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  left: 10%;
+  color: rgb(255, 255, 255);
+  text-shadow: 0.1875rem 0rem 0.4375rem rgba(81, 21, 63, 0.8),
+    -0.1875rem 0rem 0.4375rem rgba(81, 67, 21, 0.8),
+    0rem 0.25rem 0.4375rem rgba(81, 67, 21, 0.8);
+}
+
+.home-about-images-link {
+  background: linear-gradient(to bottom, transparent 0%, #45072f 250%);
+}
+
+.home-about-image {
+  z-index: -1;
+  position: relative;
+  display: block;
+  height: 20rem;
+  width: 25rem;
+}
+
+.home-about-images-wrapper:hover {
+  transform: scale(1.05);
+  -webkit-filter: brightness(150%);
+  filter: brightness(150%);
+}
+
+/************************************************** BRANDS ******************************************************/
+
+.brands-about {
+  padding: 4em 0;
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+
+.brand-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+.brand-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: center;
+  box-shadow: 0px 0px 11px #ccc;
+  width: 15rem;
+  height: 10rem;
+
+  border-radius: 1rem;
+  transition: all 0.5s ease;
+}
+
+.brand-wrapper:hover {
+  transform: scale(1.15);
+  -webkit-filter: brightness(200%);
+  filter: brightness(200%);
+}
+
+.brand-element {
+}
+
+.brand-element-image {
+  max-width: 15rem;
+  max-height: 6rem;
+  aspect-ratio: auto 390/200;
+}
+
+.brand-element-title {
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+}
+
+.brand-element-title:hover {
+  color: #2e051f;
+}
+
+@media screen and (max-width: 62rem) {
+  header {
+    padding: 0em 0em;
+  }
+
+  .header__wraper {
+    position: relative;
+    padding: 0.5rem;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 0%;
+    background-color: white;
+    height: 100vh;
+    box-shadow: rgba(93, 50, 77, 0.25) 0rem 0.8125rem 1.6875rem -0.3125rem,
+      rgba(0, 0, 0, 0.3) 0rem 0.5rem 1rem -0.5rem;
+
+    transition: all 0.5s ease;
+
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .main-nav.activo {
+    left: 40%;
+    width: 60%;
+    z-index: 9;
+  }
+
+  .header__btn-menu {
+    display: block;
+  }
+
+  .main-nav-close,
+  .header__btn-menu:hover {
+    cursor: pointer;
+  }
+
+  .nav__list {
+    padding: 3rem 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .main-nav-close {
+    display: flex;
+    margin-left: auto;
+    margin-right: 1rem;
+    margin-top: 1rem;
+
+    width: 1.2rem;
+  }
+
+  .home-intro {
+    padding: 35vh 0;
+  }
+
+  .home-intro-h1 {
+    font-weight: 900;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    color: #333;
+  }
+
+  /************************************************** MAIN ******************************************************/
+
+  main {
+    text-align: center;
+  }
+
+  .home-about {
+    padding: 2.5rem 0;
+  }
+
+  .home-about-h2 {
+    line-height: 2rem;
+  }
+
+  /************************************************** TYPES ******************************************************/
+
+  .home-about-container {
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+
+  .home-about-image {
+    height: 10rem;
+  }
+}
