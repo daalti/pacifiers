@@ -317,7 +317,7 @@ header.sticky {
 }
 
 .home-about-images-link {
-  background: linear-gradient(to bottom, transparent 0%, #45072f 250%);
+  background: linear-gradient(to bottom, transparent 0%, #000000 250%);
 }
 
 .home-about-image {
@@ -354,6 +354,7 @@ header.sticky {
 }
 
 .brand-wrapper {
+  background-color: white;
   display: flex;
   flex-flow: column nowrap;
 
