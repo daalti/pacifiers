@@ -289,6 +289,14 @@ header.sticky {
   margin-left: 1.5em;
 }
 
+.home-about-h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #000000;
+  text-align: center;
+  margin-top: 2rem;
+}
+
 /************************************************** TYPES ******************************************************/
 
 .home-about-container {
@@ -392,6 +400,110 @@ header.sticky {
   color: #2e051f;
 }
 
+/************************************* ACCESORIES *******************************************************/
+.home-about-accesories-container-wraper {
+  background-color: #fff2f5;
+  padding: 2rem;
+}
+
+.home-about-accesories-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.home-about-accesories-container-reverse {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.home-about-accesories {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: left;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.home-about-accesories-title {
+  display: flex;
+  flex-direction: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  width: 30rem;
+}
+
+.home-about-accesories-name {
+  padding: 2rem 1rem 0rem 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.home-about-accesories-image {
+  width: 20rem;
+  transition: all 0.5s ease;
+}
+
+.home-about-accesories-image:hover {
+  transform: scale(1.1);
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
+  cursor: pointer;
+}
+
+/************************************* CATALOG *******************************************************/
+
+.catalog-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  align-items: center;
+
+  gap: 3rem;
+}
+
+.catalog-images-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  transition: all 1s ease;
+  gap: 1rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-image-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+}
+
+.catalog-image {
+  position: relative;
+  display: block;
+  height: 25rem;
+  width: 18rem;
+  border-radius: 1rem;
+}
+
+.catalog-images-wrapper :hover {
+  -webkit-filter: brightness(85%);
+  filter: brightness(85%);
+}
+
+.catalog-image-title:hover {
+  cursor: pointer;
+  color: #c71585;
+}
+
 @media screen and (max-width: 62rem) {
   header {
     padding: 0em 0em;
@@ -488,5 +600,36 @@ header.sticky {
     transform: scale(1);
     -webkit-filter: brightness(55%);
     filter: brightness(55%);
+  }
+
+  /************************************* ACCESORIES *******************************************************/
+
+  .home-about-accesories-container-wraper {
+    padding: 0rem;
+  }
+
+  .home-about-accesories-container {
+    flex-flow: column nowrap;
+    gap: 2rem;
+  }
+
+  .home-about-accesories-container-reverse {
+    flex-flow: column nowrap;
+    gap: 2rem;
+  }
+
+  .home-about-accesories-title {
+    display: flex;
+    flex-direction: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  /************************************* CATALOG *******************************************************/
+
+  .catalog-container {
+    flex-flow: column wrap;
   }
 }
