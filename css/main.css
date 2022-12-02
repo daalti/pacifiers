@@ -550,7 +550,7 @@ header.sticky {
   align-items: center;
 }
 
-@media screen and (max-width: 62rem) {
+@media screen and (max-width: 46rem) {
   header {
     padding: 0em 0em;
   }
