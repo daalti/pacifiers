@@ -109,14 +109,18 @@
   text-align: center;
   padding-top: 2rem;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .products .box-container .box .image-shop img {
-  height: 15rem;
+  height: 11.5rem;
+  width: 11.5rem;
 }
 
 .products .box-container .box:hover .image-shop img {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .products .box-container .box .image-shop .icons {
