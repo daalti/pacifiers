@@ -126,9 +126,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root {
+  --Background: #faeee7;
+  --Button: #ff8ba7;
+  --Headline: #33272a;
+  --Button-Text: #33272a;
+  --Paragraph: #594a4e;
+  --Card-Background: #faeee7;
+  --Background-white: #fffffe;
+  --Card-tag-background: #ffc6c7;
+  --Link: #ff8ba7;
+}
+
 p {
   font-size: 1.125rem;
-  line-height: 1.6em;
+  line-height: 1.8;
+  font-weight: 500;
+  color: var(--Paragraph);
 }
 /***************************************************HEADER*******************************************/
 
@@ -155,7 +169,8 @@ header {
   z-index: 999;
   transition: background 250ms ease-in;
   background: var(--background);
-  color: var(--text);
+  color: var(--Paragraph);
+  font-weight: 500;
 }
 
 .header__wraper {
@@ -285,7 +300,7 @@ header.sticky {
   opacity: 0.7;
   background-size: cover;
   background-blend-mode: multiply;
-  color: black;
+  color: var(--Headline);
   text-align: center;
 }
 
@@ -316,7 +331,7 @@ header.sticky {
 .home-about-h2 {
   font-weight: 600;
   font-size: 2rem;
-  color: #c71585;
+  color: var(--Headline);
 }
 
 .columns {
@@ -340,22 +355,24 @@ header.sticky {
 .home-about-container {
   display: flex;
   flex-flow: row nowrap;
-  width: 100%;
+  gap: 1rem;
 }
 
 .home-about-images-wrapper {
   position: relative;
   overflow: hidden;
   transition: all 1s ease;
+  border-radius: 50%;
+  border: 0.05rem solid var(--Headline);
 }
 
 .home-about-image-title {
   position: absolute;
-  bottom: 1rem;
+  bottom: 6rem;
 
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
-  left: 10%;
+  left: 20%;
   color: rgb(255, 255, 255);
   text-shadow: 0.1875rem 0rem 0.4375rem rgba(81, 21, 63, 0.8),
     -0.1875rem 0rem 0.4375rem rgba(81, 67, 21, 0.8),
@@ -369,8 +386,8 @@ header.sticky {
   z-index: -1;
   position: relative;
   display: block;
-  height: 20rem;
-  width: 25rem;
+  height: 15rem;
+  width: 20rem;
 }
 
 .home-about-images-wrapper:hover {
@@ -440,7 +457,7 @@ header.sticky {
 
 /************************************* ACCESORIES *******************************************************/
 .home-about-accesories-container-wraper {
-  background-color: #fff2f5;
+  background-color: var(--Background);
   padding: 2rem;
 }
 
@@ -552,6 +569,7 @@ header.sticky {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--Background);
 }
 
 @media screen and (max-width: 46rem) {
@@ -629,6 +647,7 @@ header.sticky {
 
   .home-about {
     padding: 2.5rem 0;
+    align-items: center;
   }
 
   .home-about-h2 {
@@ -639,11 +658,13 @@ header.sticky {
 
   .home-about-container {
     flex-flow: column nowrap;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
   }
 
   .home-about-image {
-    height: 10rem;
+    height: 15rem;
   }
 
   .home-about-images-wrapper:hover {

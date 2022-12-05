@@ -19,7 +19,7 @@
 .products {
   display: flex;
   flex-flow: column nowrap;
-  width: 60rem;
+  width: 90rem;
   justify-content: center;
   align-items: center;
 }
@@ -31,15 +31,34 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #ffdbe1;
+  background-color: var(--Background);
+  background-image: url(./../images/nipple/prueba.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  height: 90vh;
+  color: white;
+}
+
+.products-heading h1 {
+  color: white;
+  text-shadow: 0.1875rem 0rem 0.4375rem rgba(81, 21, 63, 0.8),
+    -0.1875rem 0rem 0.4375rem rgba(81, 67, 21, 0.8),
+    0rem 0.25rem 0.4375rem rgba(81, 67, 21, 0.8);
+}
+
+.products-header-image {
+  width: 70rem;
+  height: 30rem;
 }
 
 .products-heading p {
   display: flex;
   flex-flow: column nowrap;
-  width: 60rem;
+  width: 85rem;
   justify-content: center;
   align-items: center;
+  color: black;
+  font-weight: 600;
 }
 .margin-h2 {
   margin-top: -2rem;
@@ -61,7 +80,7 @@
   color: #333;
   padding: 1rem;
   margin: 1rem 0;
-  width: 60rem;
+  width: 85rem;
   font-weight: 600;
 }
 
@@ -80,10 +99,8 @@
 }
 
 .products .box-container .box {
-  flex: 1 1 15rem;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
-  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  width: 20rem;
+
   position: relative;
   display: flex;
   flex-flow: column nowrap;
@@ -97,8 +114,8 @@
   padding: 0.4rem 0.5rem;
   font-size: 1rem;
   font-weight: 900;
-  color: var(--pink);
-  background: rgba(255, 51, 153, 0.05);
+  color: var(--Paragraph);
+  background: var(--Card-tag-background);
   z-index: 1;
   border-radius: 0.5rem;
 }
@@ -122,6 +139,10 @@
   transform: scale(1.2);
 }
 
+.products .box-container .box:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
 .products .box-container .box .image-shop .icons {
   position: absolute;
   bottom: -7rem;
@@ -139,7 +160,7 @@
   line-height: 2.5rem;
   font-size: 1rem;
   width: 50%;
-  background: var(--pink);
+  background: var(--Card-tag-background);
   color: #fff;
   font-weight: 600;
 }
@@ -160,16 +181,22 @@
 }
 
 .products .box-container .box .content h3 {
-  font-size: 1rem;
-  color: #333;
+  font-size: 0.9rem;
+  text-align: left;
+  color: var(--Paragraph);
   font-weight: 600;
+}
+
+.products .box-container .box .content h3:hover {
+  color: var(--pink);
 }
 
 .products .box-container .box .content .price {
   font-size: 1.5rem;
-  color: var(--pink);
+  color: var(--Paragraph);
   font-weight: bolder;
   padding-top: 1rem;
+  text-align: left;
 }
 
 .products .box-container .box .content .price span {
@@ -179,7 +206,21 @@
   text-decoration: line-through;
 }
 
+.home-about-shop {
+  padding: 4em 0;
+  max-width: 85rem;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+
 @media screen and (max-width: 46rem) {
+  .products-heading {
+    background-image: url(./../images/nipple/prueba.jpeg);
+    background-size: 100% 50vh;
+    height: 50vh;
+  }
   .products {
     margin-top: 2.5rem;
     display: flex;
