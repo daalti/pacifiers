@@ -6,6 +6,7 @@ const menu = document.querySelector(".main-nav");
 
 window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
+  header.classList.remove("white", window.scrollY > 0);
 });
 
 btnMenu.addEventListener("click", () => {

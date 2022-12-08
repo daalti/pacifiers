@@ -16,6 +16,14 @@
   gap: 2rem;
 }
 
+.main-shop-portada {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
 .products {
   display: flex;
   flex-flow: column nowrap;
@@ -25,7 +33,6 @@
 }
 
 .products-heading {
-  margin-top: 6rem;
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
@@ -35,7 +42,7 @@
   background-image: url(./../images/nipple/prueba.jpeg);
   background-repeat: no-repeat;
   background-size: 100% 100vh;
-  height: 90vh;
+  height: 100vh;
   color: white;
 }
 
@@ -215,11 +222,17 @@
   gap: 2rem;
 }
 
+.external-link {
+  text-decoration: underline;
+  color: var(--Link);
+  font-weight: 600;
+}
+
 @media screen and (max-width: 46rem) {
   .products-heading {
     background-image: url(./../images/nipple/prueba.jpeg);
-    background-size: 100% 50vh;
-    height: 50vh;
+    background-size: 100% 60vh;
+    height: 60vh;
   }
   .products {
     margin-top: 2.5rem;
