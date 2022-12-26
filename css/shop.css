@@ -138,8 +138,8 @@
 }
 
 .products .box-container .box .image-shop img {
-  height: 11.5rem;
-  width: 11.5rem;
+  height: 13rem;
+  width: auto;
 }
 
 .products .box-container .box:hover .image-shop img {
