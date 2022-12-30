@@ -81,6 +81,17 @@
   font-weight: 600;
 }
 
+.heading-blog {
+  text-align: center;
+  font-size: 4rem;
+  color: #333;
+  padding: 2rem;
+  margin: 2rem 0;
+  width: 100%;
+  font-weight: 600;
+  margin-top: 10rem;
+}
+
 .heading-h2 {
   text-align: center;
   font-size: 2rem;
