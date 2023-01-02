@@ -392,6 +392,8 @@ header.sticky {
   text-shadow: 0.1875rem 0rem 0.4375rem rgba(81, 21, 63, 0.8),
     -0.1875rem 0rem 0.4375rem rgba(81, 67, 21, 0.8),
     0rem 0.25rem 0.4375rem rgba(81, 67, 21, 0.8);
+
+  line-height: 4rem;
 }
 
 .home-intro {
@@ -455,20 +457,22 @@ header.sticky {
 
 /************************************************** TYPES ******************************************************/
 .home-about-container-accesories {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
 }
 
 .home-about-container {
   display: flex;
-  flex-flow: row nowrap;
-  gap: 8rem;
+  flex-flow: row wrap;
+  gap: 6rem;
 }
 
 .home-about-container2 {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   gap: 5rem;
   justify-content: center;
   align-items: center;
@@ -800,6 +804,11 @@ header.sticky {
   cursor: pointer;
 }
 
+.home-about p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 @media screen and (max-width: 46rem) {
   header {
     padding: 0em 0em;
@@ -1094,6 +1103,14 @@ header.sticky {
   p {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .portada-heading {
+    height: 60vh;
+  }
+
+  .portada-heading-h1 {
+    font-size: 3rem;
   }
 }
 
