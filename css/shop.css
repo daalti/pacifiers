@@ -242,7 +242,7 @@
 
 .external-link {
   text-decoration: underline;
-  color: var(--Link);
+  color: var(--pink);
   font-weight: 600;
 }
 
