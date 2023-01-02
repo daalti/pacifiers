@@ -957,20 +957,24 @@ header.sticky {
     flex-flow: column nowrap;
     justify-content: center;
 
-    gap: 2rem;
+    gap: 3rem;
   }
 
   .brand-wrapper {
-    width: 12rem;
+    width: 9rem;
     height: 7rem;
   }
 
   .brand-element-image {
-    max-width: 12rem;
-    max-height: 4.5rem;
+    max-width: 9rem;
+    max-height: 3rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     aspect-ratio: auto 390/200;
+  }
+
+  .brand-element-title {
+    font-size: 0.8rem;
   }
 
   /************************************ FOOTER *********************************************************/
@@ -984,11 +988,18 @@ header.sticky {
   }
 
   .footer_container p {
-    width: 7rem;
-    font-size: 0.8rem;
+    width: 6rem;
+    font-size: 0.6rem;
   }
 
   .footer {
     gap: 1rem;
+  }
+
+  /************************************ FONT *********************************************************/
+
+  p {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
