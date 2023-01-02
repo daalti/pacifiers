@@ -565,6 +565,14 @@ header.sticky {
   gap: 2rem;
 }
 
+.brand-container2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  gap: 2rem;
+}
+
 .brand-wrapper {
   background-color: white;
   display: flex;
@@ -879,7 +887,21 @@ header.sticky {
     width: 15rem;
   }
 
+  .home-about-container2 {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    gap: 3rem;
+  }
+
   .home-about-image {
+    height: 15rem;
+  }
+
+  .home-about-images-wrapper2 {
+    border-radius: 50%;
+    width: 15rem;
     height: 15rem;
   }
 
@@ -918,5 +940,55 @@ header.sticky {
 
   .catalog-container {
     flex-flow: column wrap;
+  }
+
+  /************************************ BRAND *********************************************************/
+
+  .brand-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+
+    gap: 2rem;
+  }
+
+  .brand-container2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    gap: 2rem;
+  }
+
+  .brand-wrapper {
+    width: 12rem;
+    height: 7rem;
+  }
+
+  .brand-element-image {
+    max-width: 12rem;
+    max-height: 4.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    aspect-ratio: auto 390/200;
+  }
+
+  /************************************ FOOTER *********************************************************/
+
+  .footer_container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .footer_container p {
+    width: 7rem;
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    gap: 1rem;
   }
 }
