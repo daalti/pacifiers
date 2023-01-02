@@ -151,7 +151,7 @@
 }
 
 .products .box-container .box .image-shop img {
-  height: 13rem;
+  /*height: 13rem;*/
   width: auto;
 }
 
@@ -277,22 +277,31 @@
 
   .products .box-container {
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: row wrap;
     align-items: center;
-    gap: 1.5rem;
+    gap: 0.5rem;
+    justify-items: center;
   }
 
   .products .box-container .box {
-    width: 90%;
     align-items: center;
+
+    width: 10.5rem;
+    height: 23rem;
   }
 
   .products .box-container .box .image-shop img {
-    height: 15rem;
-    width: 20rem;
+    height: 10rem;
+    width: 15rem;
   }
 
   .products .box-container .box .image-shop .icons {
     bottom: 0rem;
+  }
+
+  .products .box-container .box .content {
+    padding: 0.1rem;
+    text-align: center;
+    height: 5rem;
   }
 }
