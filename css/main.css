@@ -201,7 +201,7 @@ header.sticky {
 }
 
 .main-nav {
-  margin-right: 10rem;
+  margin-right: 3rem;
 }
 
 .main-nav-close {
@@ -278,6 +278,7 @@ header.sticky {
   display: none;
   position: absolute;
   background-color: white;
+  left: -3rem;
   opacity: 0.8;
   width: 15rem;
   gap: 0.5rem;
@@ -305,7 +306,7 @@ header.sticky {
 .dropdown-menu-brands {
   display: none;
   position: absolute;
-  left: -2rem;
+  left: -10rem;
   background-color: white;
   opacity: 0.8;
   width: 30rem;
@@ -334,7 +335,7 @@ header.sticky {
 .dropdown-menu-blogs {
   display: none;
   position: absolute;
-  left: -15rem;
+  left: -22rem;
   background-color: white;
   opacity: 0.8;
   width: 30rem;
@@ -431,6 +432,8 @@ header.sticky {
   font-weight: 600;
   font-size: 2rem;
   color: var(--Headline);
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .columns {
@@ -872,7 +875,7 @@ header.sticky {
     position: relative;
     background-color: white;
 
-    width: 15rem;
+    width: 25rem;
     box-shadow: none;
 
     z-index: 0;
@@ -894,7 +897,7 @@ header.sticky {
 
   .dropdown-menu a {
     color: black;
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 4rem;
     text-decoration: none;
     font-weight: 300;
   }
@@ -960,7 +963,7 @@ header.sticky {
   }
 
   .home-about-h2 {
-    line-height: 2rem;
+    line-height: 3rem;
   }
 
   /************************************************** TYPES ******************************************************/
@@ -1081,10 +1084,146 @@ header.sticky {
     gap: 1rem;
   }
 
+  .header__btn-menu {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
   /************************************ FONT *********************************************************/
 
   p {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 60rem) and (min-width: 46rem) {
+  .main-nav {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 0%;
+    background-color: white;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: rgba(93, 50, 77, 0.25) 0rem 0.8125rem 1.6875rem -0.3125rem,
+      rgba(0, 0, 0, 0.3) 0rem 0.5rem 1rem -0.5rem;
+
+    transition: all 0.5s ease;
+
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .main-nav.activo {
+    left: 0%;
+    width: 100%;
+    z-index: 9;
+    opacity: 0.95;
+  }
+
+  .header__btn-menu {
+    display: block;
+  }
+
+  .main-nav-close,
+  .header__btn-menu:hover {
+    cursor: pointer;
+  }
+
+  .nav__list {
+    padding: 3rem 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .main-nav-close {
+    display: flex;
+    margin-left: auto;
+    margin-right: 2.5rem;
+    margin-top: 2.5rem;
+
+    width: 1.2rem;
+  }
+
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+
+    width: 25rem;
+    box-shadow: none;
+
+    z-index: 0;
+  }
+
+  .dropdown-menu a:hover {
+    background-color: none;
+  }
+
+  .nav__link {
+    font-weight: 900;
+  }
+
+  .dropdown-menu a {
+    color: black;
+    padding: 0.25rem 4rem;
+    text-decoration: none;
+    font-weight: 300;
+  }
+
+  .dropdown-menu-brands {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    left: 0rem;
+
+    width: 15rem;
+    box-shadow: none;
+
+    z-index: 0;
+  }
+
+  .nav__list-item:hover .dropdown-menu-brands {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-menu-brands a {
+    color: black;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    font-weight: 300;
+  }
+
+  .dropdown-menu-blogs {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0rem;
+    background-color: white;
+
+    width: 15rem;
+
+    z-index: 0;
+    box-shadow: none;
+  }
+
+  .dropdown-menu-blogs a {
+    color: black;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  .nav__list-item:hover .dropdown-menu-blogs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__btn-menu {
+    margin-left: auto;
+    margin-right: 2rem;
   }
 }
