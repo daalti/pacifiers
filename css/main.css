@@ -328,6 +328,36 @@ header.sticky {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
+/***************************************************dropdown-menu blogs*******************************************/
+
+.dropdown-menu-blogs {
+  display: none;
+  position: absolute;
+  left: -15rem;
+  background-color: white;
+  opacity: 0.8;
+  width: 30rem;
+  gap: 0.5rem;
+  z-index: 1;
+  box-shadow: 0 0.1875rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu-blogs a {
+  color: black;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+
+.dropdown-menu-blogs a:hover {
+  background-color: #ddd;
+}
+
+.nav__list-item:hover .dropdown-menu-blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /***************************************************IMAGES*******************************************/
 
 .img-class {
@@ -420,6 +450,11 @@ header.sticky {
 }
 
 /************************************************** TYPES ******************************************************/
+.home-about-container-accesories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8rem;
+}
 
 .home-about-container {
   display: flex;
@@ -427,18 +462,59 @@ header.sticky {
   gap: 8rem;
 }
 
+.home-about-container2 {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
 .home-about-images-wrapper {
   position: relative;
   overflow: hidden;
   transition: all 1s ease;
   border-radius: 50%;
+  width: 20rem;
+  height: 15rem;
   border: 0.05rem solid var(--Headline);
+}
+
+.home-about-images-wrapper2 {
+  position: relative;
+  overflow: hidden;
+  transition: all 1s ease;
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  border: 0.05rem solid var(--Headline);
+}
+
+.home-about-images-wrapper a img {
+  width: 30rem;
+}
+
+.home-about-images-wrapper2 a img {
+  width: 20rem;
 }
 
 .home-about-image-title {
   position: absolute;
   bottom: 9rem;
 
+  font-size: 1.7rem;
+  font-weight: 600;
+  left: 20%;
+  color: rgb(255, 255, 255);
+  text-shadow: 0.1875rem 0rem 0.4375rem rgba(81, 21, 63, 0.8),
+    -0.1875rem 0rem 0.4375rem rgba(81, 67, 21, 0.8),
+    0rem 0.25rem 0.4375rem rgba(81, 67, 21, 0.8);
+}
+
+.home-about-image-title2 {
+  position: absolute;
+  bottom: 6rem;
+  line-height: 2rem;
   font-size: 1.7rem;
   font-weight: 600;
   left: 20%;
@@ -462,6 +538,12 @@ header.sticky {
 .home-about-images-wrapper:hover {
   -webkit-filter: brightness(55%);
   filter: brightness(55%);
+}
+
+.home-about-images-wrapper2:hover {
+  -webkit-filter: brightness(55%);
+  filter: brightness(55%);
+  transform: scale(1.15);
 }
 
 /************************************************** BRANDS ******************************************************/
@@ -499,8 +581,8 @@ header.sticky {
 
 .brand-wrapper:hover {
   transform: scale(1.15);
-  -webkit-filter: brightness(200%);
-  filter: brightness(200%);
+  -webkit-filter: brightness(120%);
+  filter: brightness(120%);
 }
 
 .brand-element {
@@ -522,6 +604,46 @@ header.sticky {
 
 .brand-element-title:hover {
   color: #2e051f;
+}
+
+.related-wrapper {
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: center;
+  box-shadow: 0px 0px 11px #ccc;
+  width: 18rem;
+  height: 12rem;
+
+  border-radius: 1rem;
+  transition: all 0.5s ease;
+}
+
+.related-element-image {
+  width: 18rem;
+  height: 9rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  aspect-ratio: auto 390/200;
+}
+
+.related-element-title {
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+}
+
+.related-element-title:hover {
+  color: var(--Button);
+}
+
+.related-wrapper:hover {
+  transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+  filter: brightness(105%);
 }
 
 /************************************* ACCESORIES *******************************************************/
@@ -560,7 +682,7 @@ header.sticky {
   align-items: center;
   justify-content: center;
 
-  width: 30rem;
+  width: 20rem;
 }
 
 .home-about-accesories-name {
@@ -572,7 +694,7 @@ header.sticky {
 }
 
 .home-about-accesories-image {
-  width: 20rem;
+  width: 15rem;
   transition: all 0.5s ease;
 }
 
@@ -596,8 +718,9 @@ header.sticky {
   flex-flow: row wrap;
   width: 100%;
   align-items: center;
+  justify-content: center;
 
-  gap: 3rem;
+  gap: 5rem;
 }
 
 .catalog-images-wrapper {
@@ -627,6 +750,7 @@ header.sticky {
 .catalog-images-wrapper :hover {
   -webkit-filter: brightness(85%);
   filter: brightness(85%);
+  transform: scale(1.01);
 }
 
 .catalog-image-title:hover {
@@ -645,6 +769,23 @@ header.sticky {
   justify-content: center;
   align-items: center;
   background-color: var(--Background);
+  flex-flow: column nowrap;
+  gap: 3rem;
+}
+
+.footer_container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 3rem;
+}
+
+.footer_container p {
+  width: 10rem;
+}
+
+.footer_container p:hover {
+  font-weight: 900;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 46rem) {
