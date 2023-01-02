@@ -447,6 +447,7 @@ header.sticky {
   color: #000000;
   text-align: center;
   margin-top: 2rem;
+  line-height: 2.5rem;
 }
 
 /************************************************** TYPES ******************************************************/
@@ -813,6 +814,7 @@ header.sticky {
     width: 0%;
     background-color: white;
     height: 100vh;
+    overflow-y: auto;
     box-shadow: rgba(93, 50, 77, 0.25) 0rem 0.8125rem 1.6875rem -0.3125rem,
       rgba(0, 0, 0, 0.3) 0rem 0.5rem 1rem -0.5rem;
 
@@ -823,9 +825,10 @@ header.sticky {
   }
 
   .main-nav.activo {
-    left: 40%;
-    width: 60%;
+    left: 0%;
+    width: 100%;
     z-index: 9;
+    opacity: 0.95;
   }
 
   .header__btn-menu {
@@ -861,6 +864,88 @@ header.sticky {
     font-size: 4rem;
     letter-spacing: 0.2rem;
     color: #333;
+  }
+
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+
+    width: 15rem;
+    box-shadow: none;
+
+    z-index: 0;
+  }
+
+  .dropdown-menu a {
+    color: black;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+  }
+
+  .dropdown-menu a:hover {
+    background-color: none;
+  }
+
+  .nav__link {
+    font-weight: 900;
+  }
+
+  .dropdown-menu a {
+    color: black;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    font-weight: 300;
+  }
+
+  .dropdown-menu-brands {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    left: 0rem;
+
+    width: 15rem;
+    box-shadow: none;
+
+    z-index: 0;
+  }
+
+  .nav__list-item:hover .dropdown-menu-brands {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-menu-brands a {
+    color: black;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    font-weight: 300;
+  }
+
+  .dropdown-menu-blogs {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0rem;
+    background-color: white;
+
+    width: 15rem;
+
+    z-index: 0;
+    box-shadow: none;
+  }
+
+  .dropdown-menu-blogs a {
+    color: black;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  .nav__list-item:hover .dropdown-menu-blogs {
+    display: flex;
+    flex-direction: column;
   }
 
   /************************************************** MAIN ******************************************************/
