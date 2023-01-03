@@ -463,6 +463,7 @@ header.sticky {
   margin: 0 auto;
   display: flex;
   flex-flow: column nowrap;
+
   gap: 2rem;
 }
 
