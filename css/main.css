@@ -1031,6 +1031,7 @@ header.sticky {
 
   .home-about-image {
     height: 15rem;
+    width: auto;
   }
 
   .home-about-images-wrapper2 {
