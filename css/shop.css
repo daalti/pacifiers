@@ -287,11 +287,33 @@
   padding-right: 2rem;
 }
 
+/****************************PORTADAS HEADING ************************************/
+
+.products-heading-2 {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Background);
+  background-image: url(./../images/nipple/portada1.webp);
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  height: 100vh;
+  color: white;
+}
+
 @media screen and (max-width: 46rem) {
   .products-heading {
     background-image: url(./../images/nipple/prueba.jpeg);
     background-size: 100% 60vh;
     height: 60vh;
+  }
+
+  .products-heading-2 {
+    background-size: 100% 45vh;
+    height: 45vh;
   }
   .products {
     margin-top: 2.5rem;
@@ -348,5 +370,10 @@
 
   .products .box-container .box .image-shop {
     padding-bottom: 2rem;
+  }
+
+  .heading-h2 {
+    padding: 0rem 0;
+    margin: 0rem 0;
   }
 }
