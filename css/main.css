@@ -195,6 +195,11 @@ body {
   background-color: white;
 }
 
+.header__icon-hamburguer {
+  width: 2rem;
+  height: 1.5rem;
+}
+
 .site-logo {
   width: 3rem;
   height: 3rem;
@@ -847,6 +852,23 @@ header.sticky {
   padding-right: 2rem;
 }
 
+/************************** FOTOS PORTADAS *****************************************/
+
+.portada-heading-2 {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Background);
+  background-image: url(./../images/nipple/portada3.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  height: 100vh;
+  color: white;
+  opacity: 0.6;
+}
+
 @media screen and (max-width: 46rem) {
   header {
     padding: 0em 0em;
@@ -1031,8 +1053,13 @@ header.sticky {
   }
 
   .home-about-image {
-    height: 15rem;
-    width: auto;
+    height: 12rem;
+    width: 10rem;
+  }
+
+  .home-about-images-wrapper {
+    width: 12rem;
+    height: 8rem;
   }
 
   .home-about-images-wrapper2 {
@@ -1150,6 +1177,13 @@ header.sticky {
 
   .portada-heading-h1 {
     font-size: 3rem;
+  }
+
+  /************************************ PORTADAS *********************************************************/
+
+  .portada-heading-2 {
+    height: 80vh;
+    background-image: url(./../images/nipple/portada3_mobil.webp);
   }
 }
 

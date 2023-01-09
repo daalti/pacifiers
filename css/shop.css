@@ -216,7 +216,7 @@
   line-height: 2.5rem;
   font-size: 1rem;
   width: 50%;
-  background: var(--Card-tag-background);
+  background: var(--Link);
   color: #fff;
   font-weight: 600;
 }
@@ -323,7 +323,7 @@
     align-items: center;
 
     width: 10.5rem;
-    height: 23rem;
+    height: 27rem;
   }
 
   .products .box-container .box .image-shop img {
@@ -338,6 +338,15 @@
   .products .box-container .box .content {
     padding: 0.1rem;
     text-align: center;
-    height: 5rem;
+    height: 8.5rem;
+  }
+
+  .products .box-container .box .image-shop .icons .cart-btn {
+    font-size: 0.7rem;
+    width: 180%;
+  }
+
+  .products .box-container .box .image-shop {
+    padding-bottom: 2rem;
   }
 }
