@@ -478,6 +478,7 @@ header.sticky {
   color: var(--Headline);
   padding-left: 2rem;
   padding-right: 2rem;
+  line-height: 3rem;
 }
 
 .columns {
