@@ -822,7 +822,7 @@ header.sticky {
 /************************** FOOTER *****************************************/
 
 .footer {
-  height: 20vh;
+  height: 40vh;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -834,18 +834,22 @@ header.sticky {
   gap: 3rem;
 }
 
+.footer p {
+  font-weight: 900;
+}
+
 .footer_container {
   display: flex;
-  flex-flow: row nowrap;
-  gap: 3rem;
+  flex-flow: column nowrap;
+  gap: 2rem;
 }
 
 .footer_container p {
   width: 10rem;
+  font-weight: 400;
 }
 
 .footer_container p:hover {
-  font-weight: 900;
   cursor: pointer;
 }
 
@@ -886,6 +890,9 @@ header.sticky {
 }
 
 @media screen and (max-width: 46rem) {
+  .home-about-container-accesories {
+    gap: 2rem;
+  }
   header {
     padding: 0em 0em;
   }
@@ -1070,8 +1077,8 @@ header.sticky {
   }
 
   .home-about-image {
-    height: 12rem;
-    width: 10rem;
+    height: 15rem;
+    width: 12rem;
   }
 
   .home-about-images-wrapper {
@@ -1161,19 +1168,19 @@ header.sticky {
 
   .footer_container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
-    gap: 0.1rem;
-    text-align: center;
+    gap: 0.7rem;
+    text-align: left;
   }
 
   .footer_container p {
-    width: 5rem;
-    font-size: 0.6rem;
+    width: 10rem;
+    font-size: 1rem;
   }
 
   .footer {
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .header__btn-menu {
