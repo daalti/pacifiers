@@ -1206,6 +1206,12 @@ header.sticky {
     height: 50vh;
     background-size: 100% 50vh;
   }
+
+  /*************************LOGOS*******************************/
+  .img-class {
+    width: 1rem;
+    height: 1rem;
+  }
 }
 
 @media screen and (max-width: 60rem) and (min-width: 46rem) {

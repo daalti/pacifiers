@@ -133,6 +133,7 @@
   width: 100%;
   font-weight: 600;
   margin-top: 10rem;
+  line-height: 4rem;
 }
 
 .heading-h2 {
@@ -311,6 +312,48 @@
   color: white;
 }
 
+/********************************LOGOS***********************************************/
+
+.logo-accmor {
+  height: 15.5rem;
+  width: 65rem;
+}
+
+.logo-boon {
+  height: 15.5rem;
+  width: 30rem;
+}
+
+.logo-chicco {
+  height: 16.5rem;
+  width: 30rem;
+}
+
+.logo-itzy {
+  height: 16.5rem;
+  width: 70rem;
+}
+
+.logo-laneyli {
+  height: 16.5rem;
+  width: 50rem;
+}
+
+.logo-natur {
+  height: 21rem;
+  width: 70rem;
+}
+
+.logo-nuby {
+  height: 18.5rem;
+  width: 50rem;
+}
+
+.logo-papablic {
+  height: 10rem;
+  width: 40rem;
+}
+
 @media screen and (max-width: 46rem) {
   .products-heading {
     background-image: url(./../images/nipple/prueba.webp);
@@ -382,5 +425,47 @@
   .heading-h2 {
     padding: 0rem 0;
     margin: 0rem 0;
+  }
+
+  /********************************LOGOS***********************************************/
+
+  .logo-accmor {
+    height: 4.5rem;
+    width: 20rem;
+  }
+
+  .logo-boon {
+    height: 8.5rem;
+    width: 20rem;
+  }
+
+  .logo-chicco {
+    height: 11rem;
+    width: 20rem;
+  }
+
+  .logo-itzy {
+    height: 4.5rem;
+    width: 20rem;
+  }
+
+  .logo-laneyli {
+    height: 6.5rem;
+    width: 20rem;
+  }
+
+  .logo-natur {
+    height: 6rem;
+    width: 20rem;
+  }
+
+  .logo-nuby {
+    height: 7.5rem;
+    width: 20rem;
+  }
+
+  .logo-papablic {
+    height: 5rem;
+    width: 20rem;
   }
 }
