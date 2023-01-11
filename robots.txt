@@ -1,2 +1,7 @@
 User-agent: *
+Disallow: 
 Allow: /
+Disallow: /contact.html
+Disallow: /cookies.html
+Disallow: /legal.html
+Disallow: /privacy.html
