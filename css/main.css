@@ -260,7 +260,7 @@ header.sticky {
 .nav__link {
   --spacing: 1em;
   text-decoration: none;
-  color: inherit;
+  color: black;
   display: inline-block;
   padding: calc(var(--spacing) / 2) var(--spacing);
   position: relative;
