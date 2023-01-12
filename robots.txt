@@ -5,3 +5,4 @@ Disallow: /contact.html
 Disallow: /cookies.html
 Disallow: /legal.html
 Disallow: /privacy.html
+Sitemap: https://pacifier.website/sitemap.xml
