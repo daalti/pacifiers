@@ -354,6 +354,133 @@
   width: 40rem;
 }
 
+/********************************TABLE***********************************************/
+
+.home-table {
+  max-width: 85rem;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+
+.home-table-h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--Headline);
+}
+
+.shop-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 0.0625rem solid rgb(170, 170, 170);
+  padding: 0.5rem;
+  text-align: center;
+  width: 25%;
+  vertical-align: middle;
+}
+
+.tr-image {
+}
+
+.td-image {
+}
+
+th {
+}
+
+.shop-table img {
+  max-width: 100%;
+  height: auto;
+}
+
+/********************************LIST***********************************************/
+.shop-list {
+  display: none;
+}
+
+.shop-list-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.0625rem solid rgb(170, 170, 170);
+  margin-bottom: 2rem;
+}
+
+.shop-list li {
+  width: 20rem;
+  padding: 1rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-name {
+  font-weight: 600;
+}
+
+.list-reviews {
+  font-weight: 600;
+  background-color: var(--Background);
+  color: #f90;
+}
+
+.list-advantages li {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  gap: 0.5rem;
+}
+
+.list-advantages {
+  font-weight: 600;
+  color: green;
+}
+
+.list-drawbacks li {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  gap: 0.5rem;
+}
+
+.list-drawbacks {
+  font-weight: 600;
+  background-color: var(--Background);
+  color: red;
+}
+
+.amazon-button {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  color: #fff;
+  background-color: #f90;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+.check-icon {
+  font-size: 1.5rem;
+  color: green;
+}
+
+.cross-icon {
+  font-size: 1.5rem;
+  color: red;
+}
+
+.shop-list img {
+  height: 15rem;
+  width: 20rem;
+}
+
 @media screen and (max-width: 46rem) {
   .products-heading {
     background-image: url(./../images/nipple/prueba.webp);
@@ -467,5 +594,16 @@
   .logo-papablic {
     height: 5rem;
     width: 20rem;
+  }
+
+  .shop-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shop-table {
+    display: none;
   }
 }
