@@ -367,6 +367,8 @@
 .home-table-h2 {
   font-weight: 600;
   font-size: 2rem;
+  padding: 0 1rem;
+  line-height: 3rem;
   color: var(--Headline);
 }
 
@@ -396,6 +398,10 @@ th {
 .shop-table img {
   max-width: 100%;
   height: auto;
+}
+
+.shop-table img:hover {
+  transform: scale(1.03);
 }
 
 /********************************LIST***********************************************/
@@ -464,6 +470,10 @@ th {
   background-color: #f90;
   border-radius: 0.25rem;
   text-decoration: none;
+}
+
+.amazon-button:hover {
+  transform: scale(1.2);
 }
 
 .check-icon {
